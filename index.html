@@ -1,217 +1,86 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shem Okuma — Tech Enthusiast | ICT Professional | Problem Solver</title>
-  <meta name="description" content="Portfolio of Shem Okuma — ICT Officer, developer and network specialist." />
-  <style>
-    :root{
-      --bg:#0b0f12;
-      --card:#0f1720;
-      --muted:#9aa4b2;
-      --accent:#1f8feb;
-      --accent-2:#7c5cff;
-      --glass: rgba(255,255,255,0.03);
-      --radius:14px;
-      --container:1100px;
-      color-scheme: dark;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,var(--bg),#071018);color:#e7eef8;line-height:1.5}
-    .wrap{max-width:var(--container);margin:36px auto;padding:28px}
-    header{display:flex;gap:24px;align-items:center}
-    .avatar{width:120px;height:120px;border-radius:16px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 6px 30px rgba(12,19,28,0.7)}
-    .avatar img{width:100%;height:100%;object-fit:cover}
-    .hero{flex:1}
-    h1{margin:0;font-size:28px;letter-spacing:0.2px}
-    .tag{color:var(--accent);font-weight:600;margin-top:6px}
-    .contact{margin-top:12px;color:var(--muted);font-size:14px}
-    .buttons{margin-top:14px;display:flex;gap:12px}
-    a.btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;background:var(--glass);text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.03)}
-    a.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#061223;border:0}
-
-    main{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px}
-    .card{background:linear-gradient(180deg,var(--card),#071017);padding:18px;border-radius:var(--radius);box-shadow:0 6px 24px rgba(2,6,10,0.7);border:1px solid rgba(255,255,255,0.02)}
-
-    .section{margin-bottom:16px}
-    h2{margin:0 0 10px 0;font-size:16px;color:#dbeefe}
-    p.lead{color:var(--muted);margin:0}
-
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;font-size:13px;color:var(--muted)}
-
-    .projects{display:grid;gap:12px}
-    .project{display:flex;flex-direction:column;padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02)}
-    .project h3{margin:0 0 6px 0;font-size:15px}
-    .project p{margin:0;color:var(--muted);font-size:13px}
-    .project .meta{margin-top:8px;font-size:13px;color:var(--muted)}
-
-    .timeline{display:flex;flex-direction:column;gap:10px}
-    .tl-item{padding:10px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02)}
-    .tl-item .time{font-size:12px;color:var(--muted)}
-
-    aside .card{position:sticky;top:28px}
-    .download{display:block;margin-top:12px}
-
-    footer{margin-top:28px;padding:18px;text-align:center;color:var(--muted);font-size:13px}
-
-    /* responsiveness */
-    @media (max-width:980px){main{grid-template-columns:1fr}aside{order:2}} 
-
-    /* small touches */
-    .highlight{color:var(--accent-2);font-weight:600}
-    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",monospace; font-size:13px;color:var(--muted)}
-
-    .contact-grid{display:flex;flex-wrap:wrap;gap:8px}
-    .contact-grid a{color:var(--muted);text-decoration:none;font-size:14px}
-
-    .small{font-size:13px;color:var(--muted)}
-
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Shem Okuma — Home</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="avatar card" aria-hidden="true">
-        <!-- Placeholder: replace with your photo (120x120) -->
-        <img src="shem.jpg" alt="Shem Okuma">
-      </div>
-      <div class="hero">
-        <h1>Shem Okuma</h1>
-        <div class="tag">Tech Enthusiast | ICT Professional | Problem Solver</div>
-        <div class="contact small">
-          +254 798 231 022 • <a href="mailto:shemokuma@gmail.com" class="mono">shemokuma@gmail.com</a> • <a href="https://www.linkedin.com/in/shemokuma/" target="_blank" rel="noopener">linkedin.com/in/shemokuma</a> • <a href="https://github.com/shemokuma" target="_blank" rel="noopener">github.com/shemokuma</a>
-        </div>
-        <div class="buttons">
-          <a class="btn primary" href="#contact">Contact</a>
-          <a class="btn" href="Shem_Okuma_ICT_Officer_CV.pdf" download>Download CV</a>
-        </div>
-      </div>
-    </header>
+<div class="container">
+  <header class="header">
+    <div class="logo">
+      <h1>Shem Okuma</h1>
+      <p>Tech Enthusiast | ICT Professional | Problem Solver</p>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="btn">Contact</a>
+    </nav>
+  </header>
 
+  <section class="hero">
+    <div class="avatar card" aria-hidden="true">
+      <img src="shem.jpg" alt="Shem Okuma">
+    </div>
+    <div class="intro">
+      <div class="tag">Tech Enthusiast | ICT Professional | Problem Solver</div>
+      <h2>Hello — I'm Shem Okuma</h2>
+      <p class="lead">I’m an ICT professional specializing in systems support, network administration, and full-stack web development. I build and maintain reliable IT systems for organizations while focusing on security and performance.</p>
+      <p style="margin-top:12px"><a class="primary" href="projects.html">See my work</a> <a style="margin-left:8px;color:var(--muted)" href="Shem_Okuma_ICT_Officer_CV.pdf" download>Download CV</a> <a class="download btn" href="Shem_Okuma_ICT_Officer_CV.pdf" download>Download Resume</a></p>
+    </div>
+  </section>
+
+  <div class="grid">
     <main>
-      <section>
-        <div class="card section" id="about">
-          <h2>About Me</h2>
-          <p class="lead">I’m an ICT professional with a B.Sc. in Information Communication & Technology. I specialize in systems support, network administration, and full-stack web development. I enjoy applying technology to solve operational challenges and improving service delivery through practical, secure, and scalable solutions.</p>
-        </div>
+      <div class="card">
+        <h3>Quick Overview</h3>
+        <p class="lead">Bachelor of Science — Information Communication & Technology (Laikipia University). Experience in public and private sectors with hands-on roles in networking, system maintenance, and web development.</p>
+      </div>
 
-        <div class="card section">
-          <h2>Featured Projects</h2>
-          <div class="projects">
-            <div class="project">
-              <h3>Smart Attendance System — Django</h3>
-              <p>Web-based attendance system implemented with Django. Features automated attendance capture and reporting.</p>
-              <div class="meta">Tech: Python, Django, SQLite • <a href="https://github.com/shemokuma/smart_attendance/tree/main/School/smart_attendance_system" target="_blank">GitHub</a></div>
-            </div>
-
-            <div class="project">
-              <h3>Sales & Inventory System — PHP</h3>
-              <p>Sales and inventory management system to streamline stock control and invoicing.</p>
-              <div class="meta">Tech: PHP, MySQL</div>
-            </div>
-
-            <div class="project">
-              <h3>Kenyatta National Hospital Website</h3>
-              <p>Built a responsive public site for KNH using CodeIgniter to improve access to hospital information and services.</p>
-              <div class="meta">Tech: PHP, CodeIgniter, Bootstrap</div>
-            </div>
-
+      <div class="card">
+        <h3>Featured Projects</h3>
+        <div class="projects">
+          <div class="project">
+            <h3>Smart Attendance System — Django</h3>
+            <p class="meta">Automated attendance management. <a href="https://github.com/shemokuma/smart_attendance/tree/main/School/smart_attendance_system" target="_blank">GitHub</a></p>
+          </div>
+          <div class="project">
+            <h3>Sales & Inventory — PHP</h3>
+            <p class="meta">Inventory tracking and invoicing system.</p>
+          </div>
+          <div class="project">
+            <h3>Kenyatta National Hospital Website</h3>
+            <p class="meta">Responsive website built with CodeIgniter.</p>
           </div>
         </div>
-
-        <div class="card section">
-          <h2>Experience</h2>
-          <div class="timeline">
-            <div class="tl-item">
-              <div class="time">Dec 2023 – Nov 2024</div>
-              <strong>ICT Intern — Judiciary (Siaya Law Courts)</strong>
-              <div class="small">Configured hardware & networks, supported Fortigate VPN, assisted with virtual courts, and supported e-Filing systems.</div>
-            </div>
-
-            <div class="tl-item">
-              <div class="time">Apr 2022 – Nov 2023</div>
-              <strong>Solar Energy Technician — Imexolution Limited</strong>
-              <div class="small">Installed and maintained solar systems for corporate clients; integrated ICT support for monitoring systems.</div>
-            </div>
-
-            <div class="tl-item">
-              <div class="time">Dec 2021 – Feb 2022</div>
-              <strong>ICT Officer Intern — Kenyatta National Hospital</strong>
-              <div class="small">Hardware & software support, system updates, and network assistance across departments.</div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="card section">
-          <h2>Certifications & Training</h2>
-          <div class="skills">
-            <div class="skill">Linux Essentials — Cisco</div>
-            <div class="skill">Cybersecurity Essentials — Cisco</div>
-            <div class="skill">Computer Networks — Cisco & Huawei</div>
-            <div class="skill">Web Development & Python</div>
-            <div class="skill">Computer Hardware</div>
-          </div>
-        </div>
-      </section>
-
-      <aside>
-        <div class="card section">
-          <h2>Skills</h2>
-          <div class="skills">
-            <div class="skill">Python</div>
-            <div class="skill">PHP</div>
-            <div class="skill">Django</div>
-            <div class="skill">CodeIgniter</div>
-            <div class="skill">Linux</div>
-            <div class="skill">Windows Server</div>
-            <div class="skill">MySQL / PostgreSQL</div>
-            <div class="skill">Fortigate VPN</div>
-            <div class="skill">LAN/WAN</div>
-            <div class="skill">System Maintenance</div>
-          </div>
-
-          <div class="section">
-            <h2>Contact</h2>
-            <div class="contact-grid">
-              <a href="mailto:shemokuma@gmail.com">shemokuma@gmail.com</a>
-              <a href="tel:+254798231022">+254 798 231 022</a>
-            </div>
-            <a class="download btn" href="Shem_Okuma_ICT_Officer_CV.pdf" download>Download Resume</a>
-          </div>
-
-          <div class="section">
-            <h2>Referees</h2>
-            <div class="small">
-              <strong>Alban Enoka</strong><br>
-              ICT Officer, Judiciary (Siaya Law Courts)<br>
-              <!-- alban.enoka@court.go.ke • 0727 918 713 -->
-            </div>
-            <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:10px 0">
-            <div class="small">
-              <strong>George Milla Omondi</strong><br>
-              Imexolution Limited<br>
-              <!-- millakomondi@gmail.com • 0718 967 881 -->
-            </div>
-            <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:10px 0">
-            <div class="small">
-              <strong>Erick Masinde</strong><br>
-              ICT Officer, Kenyatta National Hospital<br>
-              <!-- emasinde@knh.or.ke • 0703 599 351 -->
-            </div>
-          </div>
-
-        </div>
-      </aside>
+      </div>
     </main>
 
-    <footer>
-      © <span id="year"></span> Shem Okuma • Built for ICT Officer roles • Dark modern theme is for Tech
-    </footer>
+    <aside>
+      <div class="card">
+        <h3>Contact</h3>
+        <p class="lead"><strong>Email:</strong> <a href="mailto:shemokuma@gmail.com">shemokuma@gmail.com</a><br><strong>Phone:</strong> +254 798 231 022</p>
+        <p style="margin-top:12px"><a href="contact.html" class="primary">Get in touch</a></p>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Skills</h3>
+        <div class="skills">
+          <div class="skill">Python</div><div class="skill">PHP</div><div class="skill">Django</div><div class="skill">CodeIgniter</div>
+          <div class="skill">Linux</div><div class="skill">Fortigate VPN</div><div class="skill">LAN/WAN</div><div class="skill">System Maintenance</div>
+        </div>
+      </div>
+    </aside>
   </div>
 
+  <!--footer class="footer">© 2025 Shem Okuma</footer -->
+  <footer class="footer">
+      © <span id="year"></span> Shem Okuma 
+  </footer>
+</div>
   <script>
     // small JS helpers
     document.getElementById('year').textContent = new Date().getFullYear();
