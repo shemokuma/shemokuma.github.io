@@ -8,18 +8,23 @@
 </head>
 <body>
 <div class="container">
+
   <header class="header">
     <div class="logo">
       <h1>Shem Okuma</h1>
       <p>Tech Enthusiast | ICT Professional | Problem Solver</p>
     </div>
     <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html" class="btn">Contact</a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <ul class="nav-list" role="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="btn">Contact</a></li>
+      </ul>
     </nav>
   </header>
+
 
   <section class="hero">
     <div class="avatar card" aria-hidden="true">
@@ -29,7 +34,7 @@
       <div class="tag">Tech Enthusiast | ICT Professional | Problem Solver</div>
       <h2>Hello — I'm Shem Okuma</h2>
       <p class="lead">I’m an ICT professional specializing in systems support, network administration, and full-stack web development. I build and maintain reliable IT systems for organizations while focusing on security and performance.</p>
-      <p style="margin-top:12px"><a class="primary" href="projects.html">See my work</a> <a style="margin-left:8px;color:var(--muted)" href="Shem_Okuma_ICT_Officer_CV.pdf" download>Download CV</a> <a class="download btn" href="Shem_Okuma_ICT_Officer_CV.pdf" download>Download Resume</a></p>
+      <p style="margin-top:12px"><a class="primary" href="projects.html">See my work</a> <a style="margin-left:8px;color:var(--muted)" href="Shem_Okuma_ICT_Officer_CV.pdf" download>Download CV</a></p>
     </div>
   </section>
 
@@ -76,18 +81,27 @@
     </aside>
   </div>
 
-  <!--footer class="footer">© 2025 Shem Okuma</footer -->
-  <footer class="footer">
-      © <span id="year"></span> Shem Okuma 
-  </footer>
+  <footer class="footer">© 2025 Shem Okuma</footer>
 </div>
-  <script>
-    // small JS helpers
-    document.getElementById('year').textContent = new Date().getFullYear();
 
-    // drag & drop profile image replacement (client-side only)
-    const avatar = document.querySelector('.avatar img');
-    avatar.addEventListener('click', ()=> alert('Replace this placeholder by uploading an image file and updating the <img> src in the HTML file or via your hosting UI.'));
-  </script>
-</body>
-</html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggles = document.querySelectorAll('.menu-toggle');
+  toggles.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const nav = this.closest('.nav');
+      const list = nav.querySelector('.nav-list');
+      list.classList.toggle('active');
+    });
+  });
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    const open = document.querySelector('.nav-list.active');
+    if (open && !e.target.closest('.nav')) {
+      open.classList.remove('active');
+    }
+  });
+});
+</script>
+</body></html>
