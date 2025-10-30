@@ -1,0 +1,39 @@
+
+:root{
+  --bg:#050607;
+  --card:#0f1214;
+  --muted:#9aa4b2;
+  --accent:#1f8feb;
+  --accent-2:#7c5cff;
+  --glass: rgba(255,255,255,0.03);
+  --radius:12px;
+  --container:1100px;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;background:linear-gradient(180deg,var(--bg),#071018);color:#e7eef8;line-height:1.5}
+.container{max-width:var(--container);margin:28px auto;padding:18px}
+.header{display:flex;align-items:center;gap:20px}
+.logo{display:flex;flex-direction:column}
+.logo h1{margin:0;font-size:20px}
+.logo p{margin:0;color:var(--muted);font-size:13px}
+.nav{margin-left:auto}
+.nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600}
+.nav .btn{padding:8px 12px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.03)}
+.hero{display:flex;gap:24px;align-items:center;margin-top:28px}
+.avatar{width:160px;height:160px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));overflow:hidden;display:flex;align-items:center;justify-content:center}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.hero .intro{max-width:720px}
+.tag{color:var(--accent);font-weight:700;margin-top:6px}
+.lead{color:var(--muted);margin-top:10px}
+.card{background:linear-gradient(180deg,var(--card),#071017);padding:16px;border-radius:var(--radius);box-shadow:0 6px 24px rgba(2,6,10,0.7);border:1px solid rgba(255,255,255,0.02);margin-top:18px}
+.grid{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:18px}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skill{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px;font-size:13px;color:var(--muted)}
+.projects{display:grid;gap:12px}
+.project{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02)}
+.project h3{margin:0;font-size:16px}
+.meta{font-size:13px;color:var(--muted);margin-top:6px}
+.footer{margin-top:28px;color:var(--muted);text-align:center;font-size:13px;padding:18px}
+@media(max-width:980px){.grid{grid-template-columns:1fr}.nav{display:none}.hero{flex-direction:column;align-items:flex-start}.avatar{width:120px;height:120px}}
+a.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#061223;padding:10px 14px;border-radius:10px;text-decoration:none}
