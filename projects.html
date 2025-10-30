@@ -8,18 +8,23 @@
 </head>
 <body>
 <div class="container">
+
   <header class="header">
     <div class="logo">
       <h1>Shem Okuma</h1>
       <p>Tech Enthusiast | ICT Professional | Problem Solver</p>
     </div>
     <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html" class="btn">Contact</a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <ul class="nav-list" role="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="btn">Contact</a></li>
+      </ul>
     </nav>
   </header>
+
 
   <section class="card" style="margin-top:28px">
     <h2>Projects</h2>
@@ -41,5 +46,25 @@
 
   <footer class="footer">© 2025 Shem Okuma</footer>
 </div>
-</body>
-</html>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const toggles = document.querySelectorAll('.menu-toggle');
+  toggles.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const nav = this.closest('.nav');
+      const list = nav.querySelector('.nav-list');
+      list.classList.toggle('active');
+    });
+  });
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    const open = document.querySelector('.nav-list.active');
+    if (open && !e.target.closest('.nav')) {
+      open.classList.remove('active');
+    }
+  });
+});
+</script>
+</body></html>
