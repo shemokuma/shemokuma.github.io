@@ -18,9 +18,10 @@
       <button class="menu-toggle" aria-label="Open menu">☰</button>
       <ul class="nav-list" role="menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+       <li><a href="resume.html">Resume</a></li>    
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="btn">Contact</a></li>
+        <li><a href="labs.html">Lab Challenges</a></li>
+        <li><a href="contact.html" class="active" class="btn">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -44,10 +45,13 @@
     </div>
   </section>
 
-  <footer class="footer">© 2025 Shem Okuma</footer>
+   <footer class="footer">
+     © <span id="year"></span> Shem Okuma 
+  </footer>
 </div>
 
 <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
 document.addEventListener('DOMContentLoaded', function() {
   const toggles = document.querySelectorAll('.menu-toggle');
   toggles.forEach(btn => {
