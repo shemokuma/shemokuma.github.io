@@ -1,90 +1,109 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Shem Okuma — Home</title>
-<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<title>Shem Okuma — Home</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+	<div class="container">
+		<header class="header">
+		    <div class="logo">
+		      <h1>Shem Okuma</h1>
+		      <p>Tech Enthusiast | ICT Professional | Problem Solver</p>
+		    </div>
+		    <nav class="nav">
+		      <button class="menu-toggle" aria-label="Open menu">☰</button>
+		      <ul class="nav-list" role="menu">
+		        <li><a href="index.html" class="active">Home</a></li>
+		        <li><a href="resume.html">Resume</a></li>
+		        <li><a href="projects.html">Projects</a></li>
+		        <li><a href="labs.html">Lab Challenges</a></li>
+		        <li><a href="contact.html" class="btn">Contact</a></li>
+        
+		      </ul>
+		    </nav>
+		  </header>
+		  <!-------------------------------------------------
+				hero section descri
 
-  <header class="header">
-    <div class="logo">
-      <h1>Shem Okuma</h1>
-      <p>Tech Enthusiast | ICT Professional | Problem Solver</p>
-    </div>
-    <nav class="nav">
-      <button class="menu-toggle" aria-label="Open menu">☰</button>
-      <ul class="nav-list" role="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="btn">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+		  --->
+		  <section class="hero">
+		    <div class="avatar card" aria-hidden="true">
+		      <img src="shem.jpg" alt="Shem Okuma">
+		    </div>
+		    <div class="intro">
+		      <div class="tag">Tech Enthusiast | ICT Professional | Problem Solver</div>
+		      <h2>Hello — I'm Shem Okuma</h2>
+		      <p class="lead">I’m an ICT professional specializing in systems support, network administration, and full-stack web development. I build and maintain reliable IT systems for organizations while focusing on security and performance.</p>
+		      <p style="margin-top:12px"><a class="primary" href="projects.html">See my work</a> <a style="margin-left:8px;color:var(--muted)" href="Shem_Okuma_ICT_Officer_CV.pdf" download>Download CV</a></p>
+		    </div>
+		  </section>
+
+		  <div class="grid">
+		    <main>
+		      <div class="card">
+		        <h3>Quick Overview</h3>
+		        <p class="lead">Bachelor of Science — Information Communication & Technology (Laikipia University). Experience in public and private sectors with hands-on roles in networking, system maintenance, and web development.</p>
+		      </div>
+
+		      <div class="card">
+		        <h3>Featured Projects</h3>
+		        <div class="projects">
+		        	<h3>Programming Projects</h3>
+
+		          <div class="project">
+		            <h3>Smart Attendance System — Django</h3>
+		            <p class="meta">Automated attendance management.<a href="projects.html">Smart Attendance</a></p>
+		          </div>
+		          <div class="project">
+		            <h3>Sales & Inventory — PHP</h3>
+		            <p class="meta">Inventory tracking and invoicing system.<a href="projects.html">Sales & Inventory</a></p>
+		          </div>
+		          <div class="project">
+		            <h3>Kenyatta National Hospital housing Website</h3>
+		            <p class="meta">Responsive website built with CodeIgniter.<a href="projects.html">KNH housing</a></p>
+		          </div>
+		        </div>
+		        <div class="projects">
+		        	<h3>Cloud and Network Security Projects</h3>
+
+		          <div class="project">
+		            <h3>Network and Security design</h3>
+		            <p class="meta">Best practises to Network and security for campus.<a href="projects.html">Networks</a></p>
+		          </div>
+		          
+		        </div>
+		      </div>
+		    </main>
+
+		    <aside>
+		      <div class="card">
+		        <h3>Contact</h3>
+		        <p class="lead"><strong>Email:</strong> <a href="mailto:shemokuma@gmail.com">shemokuma@gmail.com</a><br><strong>Phone:</strong> +254 798 231 022</p>
+		        <p style="margin-top:12px"><a href="contact.html" class="primary">Get in touch</a></p>
+		      </div>
+
+		      <div class="card" style="margin-top:14px">
+		        <h3>Skills</h3>
+		        <div class="skills">
+		          <div class="skill">Python</div><div class="skill">PHP</div><div class="skill">Django</div><div class="skill">CodeIgniter</div>
+		          <div class="skill">Linux</div><div class="skill">Fortigate VPN</div><div class="skill">LAN/WAN</div>
+		          <div class="skill">System Maintenance</div><div class="skill">Project management</div>
+		        </div>
+		      </div>
+		    </aside>
+		  </div>
 
 
-  <section class="hero">
-    <div class="avatar card" aria-hidden="true">
-      <img src="shem.jpg" alt="Shem Okuma">
-    </div>
-    <div class="intro">
-      <div class="tag">Tech Enthusiast | ICT Professional | Problem Solver</div>
-      <h2>Hello — I'm Shem Okuma</h2>
-      <p class="lead">I’m an ICT professional specializing in systems support, network administration, and full-stack web development. I build and maintain reliable IT systems for organizations while focusing on security and performance.</p>
-      <p style="margin-top:12px"><a class="primary" href="projects.html">See my work</a> <a style="margin-left:8px;color:var(--muted)" href="Shem_Okuma_ICT_Officer_CV.pdf" download>Download CV</a></p>
-    </div>
-  </section>
-
-  <div class="grid">
-    <main>
-      <div class="card">
-        <h3>Quick Overview</h3>
-        <p class="lead">Bachelor of Science — Information Communication & Technology (Laikipia University). Experience in public and private sectors with hands-on roles in networking, system maintenance, and web development.</p>
-      </div>
-
-      <div class="card">
-        <h3>Featured Projects</h3>
-        <div class="projects">
-          <div class="project">
-            <h3>Smart Attendance System — Django</h3>
-            <p class="meta">Automated attendance management. <a href="https://github.com/shemokuma/smart_attendance/tree/main/School/smart_attendance_system" target="_blank">GitHub</a></p>
-          </div>
-          <div class="project">
-            <h3>Sales & Inventory — PHP</h3>
-            <p class="meta">Inventory tracking and invoicing system.</p>
-          </div>
-          <div class="project">
-            <h3>Kenyatta National Hospital Website</h3>
-            <p class="meta">Responsive website built with CodeIgniter.</p>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <aside>
-      <div class="card">
-        <h3>Contact</h3>
-        <p class="lead"><strong>Email:</strong> <a href="mailto:shemokuma@gmail.com">shemokuma@gmail.com</a><br><strong>Phone:</strong> +254 798 231 022</p>
-        <p style="margin-top:12px"><a href="contact.html" class="primary">Get in touch</a></p>
-      </div>
-
-      <div class="card" style="margin-top:14px">
-        <h3>Skills</h3>
-        <div class="skills">
-          <div class="skill">Python</div><div class="skill">PHP</div><div class="skill">Django</div><div class="skill">CodeIgniter</div>
-          <div class="skill">Linux</div><div class="skill">Fortigate VPN</div><div class="skill">LAN/WAN</div><div class="skill">System Maintenance</div>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-  <footer class="footer">© 2025 Shem Okuma</footer>
-</div>
+		  <footer class="footer">
+		      © <span id="year"></span> Shem Okuma 
+		   </footer>
+	</div>
 
 <script>
+	document.getElementById('year').textContent = new Date().getFullYear();
 document.addEventListener('DOMContentLoaded', function() {
   const toggles = document.querySelectorAll('.menu-toggle');
   toggles.forEach(btn => {
@@ -104,4 +123,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-</body></html>
+</body>
+</html>
