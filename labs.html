@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Challenges | Shem Okuma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+      <header class="header">
+        <div class="logo">
+          <h1>Shem Okuma</h1>
+          <p>Tech Enthusiast | ICT Professional | Problem Solver</p>
+        </div>
+        <nav class="nav">
+          <button class="menu-toggle" aria-label="Open menu">☰</button>
+          <ul class="nav-list" role="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html" >Projects</a></li>
+            <li><a href="labs.html" class="active">Lab Challenges</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+
+  <main class="content">
+    <h2>Lab Challenges</h2>
+
+    <div class="lab-card">
+      <h3>SQL Injection Challenge</h3>
+      <p><strong>Problem:</strong> Bypass login authentication using SQL injection.</p>
+      <p><strong>Approach:</strong> Used UNION-based injection to extract admin credentials.</p>
+      <p><strong>Tools:</strong> Burp Suite, SQLMap, Firefox DevTools</p>
+      <p><strong>Key Lesson:</strong> Learned about parameterized queries and secure coding.</p>
+    </div>
+
+    <div class="lab-card">
+      <h3>Network Forensics Challenge</h3>
+      <p><strong>Problem:</strong> Identify the attacker IP from a captured pcap file.</p>
+      <p><strong>Approach:</strong> Used Wireshark filters and traffic pattern analysis.</p>
+      <p><strong>Tools:</strong> Wireshark, Nmap</p>
+      <p><strong>Key Lesson:</strong> Learned packet analysis and network intrusion detection basics.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+          © <span id="year"></span> Shem Okuma 
+       </footer>
+  </div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+document.addEventListener('DOMContentLoaded', function() {
+  const toggles = document.querySelectorAll('.menu-toggle');
+  toggles.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const nav = this.closest('.nav');
+      const list = nav.querySelector('.nav-list');
+      list.classList.toggle('active');
+    });
+  });
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    const open = document.querySelector('.nav-list.active');
+    if (open && !e.target.closest('.nav')) {
+      open.classList.remove('active');
+    }
+  });
+});
+</script>
+</body>
+</html>
