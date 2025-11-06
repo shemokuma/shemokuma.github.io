@@ -1,53 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Projects — Shem Okuma</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Shem Okuma</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+  <div class="container">
 
-  <header class="header">
-    <div class="logo">
-      <h1>Shem Okuma</h1>
-      <p>Tech Enthusiast | ICT Professional | Problem Solver</p>
-    </div>
-    <nav class="nav">
-      <button class="menu-toggle" aria-label="Open menu">☰</button>
-      <ul class="nav-list" role="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="btn">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <header class="header">
+        <div class="logo">
+          <h1>Shem Okuma</h1>
+          <p>Tech Enthusiast | ICT Professional | Problem Solver</p>
+        </div>
+        <nav class="nav">
+          <button class="menu-toggle" aria-label="Open menu">☰</button>
+          <ul class="nav-list" role="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="labs.html">Lab Challenges</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+      <main class="content">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+          <h3><strong>Comming soon </strong> Network and Security design</h3>
+          <p>Best practises to Network and security for campus together with configurations</p>
+          <p><strong>Tools to be used:</strong> Packet tracer as our lab</p>
+          <a href="https://github.com/shemokuma/network-and-security" target="_blank">very soon</a>
+        </div>
+
+        <div class="project-card">
+          <h3>AI Price Predictor</h3>
+          <p>Machine learning microservice predicting auction prices using FastAPI.</p>
+          <p><strong>Tools:</strong> FastAPI, scikit-learn, Pandas</p>
+          <a href="https://github.com/shemokuma/ai-price-predictor" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Smart Attendance System</h3>
+          <p>Web-based attendance system implemented with Django. Features automated attendance capture and reportin.</p>
+          <p><strong>Tools:</strong>Python, Django, scikit-learn, Pandas,SQLite</p>
+          <a href="https://github.com/shemokuma/smart_attendance/tree/main/School/smart_attendance_system" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Sales & Inventory Management System</h3>
+          <p>Sales and inventory management system to streamline stock control and invoicing..</p>
+          <p><strong>Tools:</strong> PHP, MySQL</p>
+          <!--a href="https://github.com/shemokuma/ai-price-predictor" target="_blank">View on GitHub</a-->
+        </div>
+
+        <div class="project-card">
+          <h3>Kenyatta National Hospital housing Website</h3>
+          <p>Built a responsive public site for KNH using CodeIgniter to improve housing access to hospital information and services to Staff members.</p>
+          <p><strong>Tools:</strong> PHP, CodeIgniter, Bootstrap</p>
+          <a href="#" target="_blank">Live Demo</a>
+        </div>
 
 
-  <section class="card" style="margin-top:28px">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>Smart Attendance System</h3>
-        <p class="meta">Django-based attendance system with reporting features. <a href="https://github.com/shemokuma/smart_attendance/tree/main/School/smart_attendance_system" target="_blank">View on GitHub</a></p>
-      </div>
-      <div class="project">
-        <h3>Sales & Inventory Management System</h3>
-        <p class="meta">Custom PHP system for inventory, sales, and invoicing.</p>
-      </div>
-      <div class="project">
-        <h3>Kenyatta National Hospital Website</h3>
-        <p class="meta">Public-facing website built with CodeIgniter for KNH.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">© 2025 Shem Okuma</footer>
-</div>
+      </main>
+      <footer class="footer">
+              © <span id="year"></span> Shem Okuma 
+      </footer>
+  </div>
 
 <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
 document.addEventListener('DOMContentLoaded', function() {
   const toggles = document.querySelectorAll('.menu-toggle');
   toggles.forEach(btn => {
@@ -67,4 +93,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-</body></html>
+</body>
+</html>
